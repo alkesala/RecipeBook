@@ -1,6 +1,8 @@
 # Aleksi Kesälä
 # Object oriented programming practice work RECIPEBOOK
-# "Frontend of recipebook"
+# "Frontend" of recipebook
+# TODO new recipes -> add category
+# TODO database  
 
 from recipe import Recipe
 from recipebook import Recipebook
@@ -42,7 +44,7 @@ def remove_recipe(recipe_book):  # Basic remove method.
         print("Recipe removed successfully.")
     else:
         print("Recipe not found.")
-
+# change this to make user able to add category
 def pick_category(recipe_book):
     print("1. Vegan Recipes")
     print("2. Meat Recipes")
