@@ -1,0 +1,118 @@
+[
+    {
+        "name": "Grilled Salmon",
+        "category": "fish",
+        "ingredients": [
+            "salmon fillets",
+            "lemon",
+            "garlic",
+            "olive oil",
+            "salt",
+            "pepper"
+        ],
+        "instructions": "Season salmon with garlic, salt, and pepper. Grill over medium heat, skin-side down, for 6-8 minutes. Flip and cook until desired doneness."
+    },
+    {
+        "name": "Fish Tacos",
+        "category": "fish",
+        "ingredients": [
+            "white fish",
+            "cabbage slaw",
+            "creamy sauce",
+            "lime",
+            "corn tortillas"
+        ],
+        "instructions": "Cook fish until golden and flaky. Serve on warmed tortillas with slaw and sauce. Squeeze lime over tacos before serving."
+    },
+    {
+        "name": "Lemon Butter Cod",
+        "category": "fish",
+        "ingredients": [
+            "cod fillets",
+            "butter",
+            "lemon juice",
+            "garlic",
+            "parsley"
+        ],
+        "instructions": "Melt butter in a skillet, add garlic and lemon juice. Cook cod in the skillet until cooked through. Garnish with parsley."
+    },
+    {
+        "name": "Beef Stroganoff",
+        "category": "meat",
+        "ingredients": [
+            "beef sirloin",
+            "mushrooms",
+            "onion",
+            "beef broth",
+            "sour cream",
+            "flour",
+            "mustard"
+        ],
+        "instructions": "Brown beef. Add mushrooms and onion, cook until soft. Stir in flour and mustard, add broth. Simmer until thick. Remove from heat, mix in sour cream."
+    },
+    {
+        "name": "Chicken Parmesan",
+        "category": "meat",
+        "ingredients": [
+            "chicken breasts",
+            "breadcrumbs",
+            "parmesan cheese",
+            "marinara sauce",
+            "mozzarella cheese"
+        ],
+        "instructions": "Bread chicken with breadcrumbs and parmesan. Bake until golden. Top with marinara and mozzarella, bake until cheese is melted."
+    },
+    {
+        "name": "Pork Chops with Apples",
+        "category": "meat",
+        "ingredients": [
+            "pork chops",
+            "apples",
+            "cinnamon",
+            "brown sugar",
+            "butter"
+        ],
+        "instructions": "Cook pork chops until browned. In the same skillet, add apples, cinnamon, and sugar. Cook until apples are soft. Serve pork chops topped with apple mixture."
+    },
+    {
+        "name": "Vegan Chili",
+        "category": "vegan",
+        "ingredients": [
+            "black beans",
+            "kidney beans",
+            "tomato",
+            "onion",
+            "bell peppers",
+            "chili powder",
+            "cumin"
+        ],
+        "instructions": "Saute onion and peppers. Add tomatoes, beans, and spices. Simmer for 30 minutes. Serve hot."
+    },
+    {
+        "name": "Tofu Stir-Fry",
+        "category": "vegan",
+        "ingredients": [
+            "tofu",
+            "broccoli",
+            "carrot",
+            "soy sauce",
+            "ginger",
+            "garlic",
+            "rice"
+        ],
+        "instructions": "Press tofu, then cube. Saute vegetables, add tofu. Stir in soy sauce, ginger, and garlic. Serve over rice."
+    },
+    {
+        "name": "Vegan Lasagna",
+        "category": "vegan",
+        "ingredients": [
+            "lasagna noodles",
+            "marinara sauce",
+            "spinach",
+            "vegan ricotta",
+            "zucchini",
+            "bell pepper"
+        ],
+        "instructions": "Layer sauce, noodles, ricotta, vegetables, and repeat. Cover and bake for 45 minutes. Uncover, bake for 15 more minutes."
+    }
+]
