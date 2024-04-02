@@ -45,41 +45,50 @@ def remove_recipe(recipe_book):  # Basic remove method.
         print("Recipe removed successfully.")
     else:
         print("Recipe not found.")
-# change this to make user able to add category
+
+
 def pick_category(recipe_book):
-    print("1. Vegan Recipes")
-    print("2. Meat Recipes")
-    print("3. Fish Recipes")
+    categories = recipe_book.get_categories()
+    if not categories:
+        print("No categories available.")
+        return
+
+    # prints categories for user
+    for i, category in enumerate(categories, start=1):
+        print(f"{i}. {category.capitalize()}")
+
+    # users choice
     category_choice = input("Select category: ")
-
-    all_categories = {
-        "1": "vegan",
-        "2": "meat",
-        "3": "fish"
-    }
-
-    category = all_categories.get(category_choice, "")
-    if not category:
+    try:
+        category_num = int(category_choice) - 1
+        category = categories[category_num]
+    except (ValueError, IndexError):
         print("Invalid selection.")
         return
 
-    recipe_categories = recipe_book.categories(category)
+    # get recipes in the chosen category
+    recipe_categories = recipe_book.get_recipes_by_category(category)
     if not recipe_categories:
         print("No recipes found in this category.")
         return
 
-    for i, recipe in enumerate(recipe_categories):
-        print(f"{i + 1}. {recipe.name}")
+    # Display recipes in the chosen category
+    for i, recipe in enumerate(recipe_categories, start=1):
+        print(f"{i}. {recipe.name}")
 
+    # Get user's recipe choice
     recipe_choice = input("Select a recipe to view details: ")
     try:
         selected_num = int(recipe_choice) - 1
         if 0 <= selected_num < len(recipe_categories):
-            print(recipe_categories[selected_num])
+            selected_recipe = recipe_categories[selected_num]
+            print(selected_recipe)  # This will call the __str__ method of Recipe class
         else:
             print("Invalid selection.")
     except ValueError:
         print("Please enter a number.")
+ 
+        
 def main():
     recipe_book = Recipebook()
 

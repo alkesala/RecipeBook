@@ -11,7 +11,7 @@ class Recipe:
         self.instructions = instructions
 
     def __str__(self):
-        return (f"{self.name}\nCategory: {self.category}\nIngredients: {', '.join(self.ingredients)}\nInstructions:"
+        return (f"{self.name}\nCategory: {self.category}\nIngredients: {self.ingredients}\nInstructions:"
                 f" {self.instructions}")
     
     def to_dictionary(self):
