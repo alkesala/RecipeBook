@@ -1,8 +1,6 @@
 # Aleksi Kesälä
 # Object oriented programming practice work RECIPEBOOK
 # "Frontend" of recipebook
-# TODO new recipes -> add category
-# TODO database
 # TODO make more userfriendly, catch errors etc. add sleep.
 
 from recipe import Recipe
