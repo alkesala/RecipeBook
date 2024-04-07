@@ -1,7 +1,6 @@
 # Aleksi Kesälä
 # Object oriented programming practice work RECIPEBOOK
 # "Frontend" of recipebook
-# TODO make more userfriendly, catch errors etc. add sleep.
 
 from recipe import Recipe
 from recipebook import Recipebook
@@ -9,6 +8,7 @@ from recipebook import Recipebook
 
 def list_recipes(recipe_book):  # Method for listing all recipe names.
     recipe_book.list_recipes()
+
 
 def add_recipe(recipe_book):  # Method for adding a new recipe.
     name = input("Enter the name for the recipe: ")
@@ -18,6 +18,7 @@ def add_recipe(recipe_book):  # Method for adding a new recipe.
     recipe = Recipe(name, category, ingredients, instructions)
     recipe_book.add_recipe(recipe)
     print("Recipe added! Enjoy.")
+
 
 def search_recipe(recipe_book):  # Searches for a keyword in the recipe book.
     search_keyword = input("Enter recipe name or keyword to search for a recipe: ")
@@ -36,6 +37,7 @@ def search_recipe(recipe_book):  # Searches for a keyword in the recipe book.
             print(user_recipe)
         else:
             print("No recipes found.")
+
 
 def remove_recipe(recipe_book):  # Basic remove method.
     name = input("Enter the recipe you want to delete: ")

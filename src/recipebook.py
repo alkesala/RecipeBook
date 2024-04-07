@@ -22,12 +22,12 @@ class Recipebook:
             return []
 
 
-    def save_recipe(self):  # method for saving recipe in JSON file recipes.json
+    def save_recipe(self):  # Method for saving recipe in JSON file recipes.json
         with open(self.filename, 'w') as file:
             json.dump([recipe.to_dictionary() for recipe in self.recipes], file, indent=4)
 
     
-    def list_recipes(self):  # basic printout method for all recipes
+    def list_recipes(self):  # Basic printout method for all recipes
         for recipe in self.recipes:
             print(f"Name: {recipe.name}, category: {recipe.category}")
 
@@ -40,7 +40,7 @@ class Recipebook:
         self.save_recipe()
 
     
-    def search_recipe(self, search_keyword):  # basic search method
+    def search_recipe(self, search_keyword):  # Basic search method
         matching_recipes = [recipe for recipe in self.recipes if search_keyword.lower() in recipe.name.lower()]
         return matching_recipes
     
@@ -49,7 +49,7 @@ class Recipebook:
         for i, recipe in enumerate(self.recipes):
             if recipe.name == name:
                 del self.recipes[i]
-                self.save_recipe()  # save changes
+                self.save_recipe()  # Save changes
                 return True
         return False  # False if not found
     

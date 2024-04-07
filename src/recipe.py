@@ -10,9 +10,10 @@ class Recipe:
         self.ingredients = ingredients
         self.instructions = instructions
 
-    def __str__(self):
-        return (f"{self.name}\nCategory: {self.category}\nIngredients: {self.ingredients}\nInstructions:"
+    def __str__(self):          # .join prints out as single string
+        return (f"{self.name}\nCategory: {self.category}\nIngredients: {', '.join(self.ingredients)}\nInstructions:"
                 f" {self.instructions}")
+
     
     def to_dictionary(self):
         return {
