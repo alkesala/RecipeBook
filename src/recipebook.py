@@ -55,7 +55,6 @@ class Recipebook:
     
     def get_categories(self):
         categories = set(recipe.category for recipe in self.recipes)
-        print(f"Categories found: {categories}")  # Debug print
         return list(categories)
 
 
